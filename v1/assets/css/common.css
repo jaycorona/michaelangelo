@@ -1,0 +1,234 @@
+@charset "utf-8";
+/*--------------------------------
+
+@common
+
+last update 130908
+v 1.0
+
+--------------------------------*/
+
+html,body{
+	
+	font-size:13px;
+	font-family:"メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	letter-spacing:1px;
+		
+}
+
+img { -ms-interpolation-mode: bicubic; }
+
+
+#wrapper{
+	width:100%;
+	height:100%;
+	min-width:1024px;
+	min-height:800px;
+	position:relative;
+	z-index:1;
+}
+
+#main{
+	
+}
+
+
+/*-------------------
+@preloader
+-------------------*/
+#preloader {
+	width:100%;
+	height:100%;
+	position: fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	background:#000;
+	z-index:100;
+}
+
+.cssload-container {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+}
+
+.cssload-zenith {
+	width: 24px;
+	height: 24px;
+	margin: 0 auto;
+	border-radius: 50%;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	box-shadow: 1px 1px 0px rgb(255,255,255);
+	animation: cssload-spin 510ms infinite linear;
+		-o-animation: cssload-spin 510ms infinite linear;
+		-ms-animation: cssload-spin 510ms infinite linear;
+		-webkit-animation: cssload-spin 510ms infinite linear;
+		-moz-animation: cssload-spin 510ms infinite linear;
+}
+
+
+
+@keyframes cssload-spin {
+	100%{ transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-o-keyframes cssload-spin {
+	100%{ -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-ms-keyframes cssload-spin {
+	100%{ -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-webkit-keyframes cssload-spin {
+	100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-moz-keyframes cssload-spin {
+	100%{ -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+
+
+/*-------------------------------
+
+@contents
+
+-------------------------------*/
+#contents{
+	min-height:650px;
+	overflow:hidden;
+}
+
+.activate{
+	display:block;
+}
+
+.deactivate{
+	
+	display:none;
+}
+
+.disable-select{
+	user-select: none; /* CSS3 */
+	-moz-user-select: none; /* Firefox */
+	-webkit-user-select: none; /* Safari、Chrome */
+	-ms-user-select: none; /* IE10 */
+}
+
+
+
+/*-------------------------------
+
+@navi
+
+-------------------------------*/
+#navi {
+	padding:25px 0 30px;
+	height:350px;
+}
+
+#navi li{
+	/*background-image:url(../img/common/sidebar/naviLine.png);*/
+	background-position:center top;
+	background-repeat:repeat-x;
+	padding:1px 0 0;
+	filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity: 0;
+    opacity:0;
+}
+
+#navi li p img{
+	display:block;
+}
+
+#navi li p{
+	cursor:pointer;
+}
+
+
+/*-------------------------------
+
+@flash
+-------------------------------*/
+#flash-container{
+}
+
+
+/*-------------------------------
+
+@banner
+
+-------------------------------*/
+#banner-container{
+}
+
+
+#banner-container li{
+}
+
+
+
+
+
+/*-------------------------------
+
+@SNS
+
+-------------------------------*/
+.social-container{
+	margin:0 auto;
+	display:table;
+	padding:15px 0 0 0;
+}
+
+.social-container li{
+	float:left;
+	display:block;
+	height:24px;
+}
+
+
+#twitter{
+	padding:0 10px 0 0;
+	width:100px;
+}
+
+#facebook-like{
+	padding:0 10px 0 0;
+	width:105px;
+}
+
+#eiga-com{
+	width:120px;
+}
+
+
+
+/*-------------------------------
+
+@modules
+
+-------------------------------*/
+a{
+}
+
+a:hover{
+}
+
+
+
+.inner{
+}
+
+

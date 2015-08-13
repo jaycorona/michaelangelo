@@ -1,0 +1,102 @@
+@charset "utf-8";
+/***********************************
+
+ * Theme Name: tablet common Theme
+ * Author : mitsut
+ * Version : 2.0
+ * Last-updated : 14-02-05
+
+ Copyright © 2012 ULM design Co.,Ltd.
+ 
+ 
+ * font-size（px : %）
+ * base font-size:16px;
+ * 
+ *  10 px : 63%   |  11 px : 69% 
+ *  12 px : 75%   |  13 px : 82% 
+ *  14 px : 88%   |  15 px : 94% 
+ *  16 px : 100%  |  17 px : 107%
+ *  18 px : 113%  |  19 px : 119%
+ *  20 px : 125%  |  22 px : 138%
+ *  24 px : 150%  |  26 px : 163%
+ *  28 px : 175%  |  30 px : 188%
+ *  32 px : 200%  |  34 px : 212%
+ *  36 px : 225%
+ 
+***********************************/
+body{
+	font-size: 16px;
+	font-family: Helvetica,HiraKakuProN-W3;
+	line-height:1.6;
+	letter-spacing:1px;
+	-webkit-text-size-adjust: none; /* auto adjust */
+	padding:0;
+	margin:0;
+}
+
+
+/*------------------------------------
+
+font
+
+-------------------------------------*/
+.fontsize-20{ font-size:125%;}
+.fontsize-15{ font-size:94%; }
+.fontsize-14{ font-size:88%; }
+
+
+
+/*------------------------------------
+
+display
+
+------------------------------------*/
+article,aside,canvas,details,
+figcaption,figure,footer,header,
+hgroup,menu,nav,section,summary{
+	display:block;
+}
+
+
+
+
+img{
+	border:0;
+	vertical-align:bottom;
+}
+
+
+table{
+	border-spacing:0;
+	empty-cells:show;
+}
+
+
+h2{
+	/*font-32*/
+	font-size:200%;
+	line-height:150%;
+}
+
+h3{
+	/*font-26*/
+	font-size:163%;
+}
+
+h4{
+	/*font-16*/
+	font-size:100%;
+}
+
+
+.small {
+	/*font-12*/
+	font-size:75%;
+}
+
+.strong{
+	font-weight:bold;
+	display:block;
+}
+
+

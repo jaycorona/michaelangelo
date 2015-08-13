@@ -1,0 +1,399 @@
+@charset "utf-8";
+
+/***************************************************
+
+ Copyright © 2013 ULM design Co.,Ltd.
+ 
+ sp/tablet both css
+ v3.0
+ 
+***************************************************/
+html,body{
+	background-color:#e50011;
+	text-align:left;
+	margin:0;
+	padding:0;
+	-webkit-text-size-adjust: none; /* adjust */
+}
+
+
+
+
+
+
+/***************************************************
+
+ block
+ 
+***************************************************/
+#wrapper {
+	width:100%;
+	margin:0 auto;
+	background:url(../img/top/bg.jpg) repeat  center;
+	background-size:100% auto;
+	position:relative;
+	
+}
+
+
+
+
+
+/***************************************************
+
+ header
+ 
+***************************************************/
+header {
+	padding: 0;
+	margin:0 auto;
+}
+
+
+
+
+
+
+
+/***************************************************
+
+ trailer
+ 
+***************************************************/
+#trailer-container{
+	margin:7% auto 1% auto;
+	width:80%;
+}
+#trailer{
+	background:#000;
+	color:#fff;
+	text-align:center;  
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	display: block;
+}
+
+#trailer-nav{
+	width:100%;
+}
+
+#trailer-nav p{
+	min-height:38px;
+	line-height:38px;
+	letter-spacing: 3px;
+	text-align:center;
+	width:50%;
+	background:none;
+	color:#000;
+    box-shadow:inset 0 -1px 0 0 #73B8DD;
+}
+
+#trailer-nav p:first-child{
+	width:50%;
+	box-shadow: inset 1px -1px 0 #FFF100;
+	border-bottom-left-radius:6px;
+}
+
+#trailer-nav p:last-child{
+	border-bottom-right-radius:6px;
+	box-shadow:inset -1px -1px 0 #FFF100;
+}
+
+
+
+#trailer-nav p.trailer-selected{
+	background:#FFF100;
+	color:#000;
+}
+
+
+
+
+
+
+
+
+/***************************************************
+
+ nav
+ 
+***************************************************/
+nav{
+	width:100%;
+	
+}
+
+nav ul{
+	padding: 5% 0 3% 0;
+}
+
+nav ul li{
+	list-style:none;
+	display:block;
+    padding: 0 0 3% 0;
+}
+
+
+
+nav ul li.selected{
+}
+
+
+
+nav ul li a{
+	display: block;
+	
+	/*mobile safari*/
+	-webkit-tap-highlight-color: rgba(0,0,0,0.4);
+}
+
+
+
+
+
+
+
+/***************************************************
+
+ section
+ 
+***************************************************/
+section{
+	padding:0;
+	margin:0;
+}
+
+.section-container{
+	padding:0 5%;
+}
+
+
+
+/***************************************************
+
+ article
+ 
+***************************************************/
+article {
+	
+}
+
+
+.article-container{
+	padding:10px 0 0;
+}
+
+
+
+
+.title{
+	color:#900;
+	font-size: 100%;
+	letter-spacing:0;
+	font-weight:bold;
+}
+
+
+.txt{
+	padding:0 0 15px;
+}
+
+
+
+
+/***************************************************
+
+ footer
+ 
+***************************************************/
+footer{
+	width:100%;
+	background:#000;
+	padding:10px 0 0 0;
+	margin:0 auto;
+}
+
+.banner-container{
+	padding:10px 5% 0;
+}
+
+.cc{
+	padding:0 1px;
+}
+
+.cc p{
+	font-size:71%;
+	line-height:1.3em;
+	text-align:center;
+	color:#888;
+}
+
+.cc a{
+	color:#9e6737;
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+/***************************************************
+
+ * SNS
+ 
+***************************************************/
+#social-container{
+	display:table;
+	margin:15px auto 0;
+}
+
+
+.social-btn{
+	float:left;
+	padding:0 5px 15px 0;
+}
+
+#twitter-btn{
+	width:110px;
+}
+
+#facebook-btn{
+	width:125px;
+}
+
+#google-btn{
+	width:40px;
+}
+
+#mixi-btn{
+	width:80px;
+}
+
+#gree-btn{
+	width:80px;
+}
+
+#line-btn{
+	width:110px;
+	clear:both;
+}
+
+#eiga-com{
+	width:120px;
+	
+}
+
+#hatena-btn{
+	width:100px;
+}
+
+
+
+
+
+
+/***************************************************
+
+ * default
+ 
+***************************************************/
+h1{}
+
+h2{}
+
+h3{ color:#9725d8;}
+
+h4{ color:#3876b4;}
+
+
+
+/*--------------------------------------------------
+a
+--------------------------------------------------*/
+a {
+	color: #f39600;
+	text-decoration: underline;
+}
+a:hover,a:active {
+	text-decoration: none;
+}
+
+
+p{
+	letter-spacing:0;
+	line-height: 1.7em;
+}
+
+
+
+/***************************************************
+
+ * modules
+ 
+***************************************************/
+
+
+
+/*--------------------------------------------------
+color
+--------------------------------------------------*/
+.purple{
+	color:#d40c1f;
+}
+.red{
+	color:#d40c1f;
+}
+.blue{
+	color:#414fbc;
+}
+.yellow{
+	color:#e9dd53;
+}
+.beige{
+	color:#b8a569;
+}
+.orange{
+	color:#FF7400;
+}
+.white{
+	color:#FFF;
+}
+
+
+.small {
+	letter-spacing:1px;
+	padding:0;
+	margin:0;
+}
+
+
+.strong{
+	font-weight:bold;
+	color:#f39600;
+	display:block;
+}
+
+
+
+
+/*--------------------------------------------------
+change
+--------------------------------------------------*/
+.change{
+	display:block;
+	/*margin:0 auto;*/
+}
+
+
+
+/*--------------------------------------------------
+pagetop
+--------------------------------------------------*/
+.pagetop {
+	text-align: right;
+}

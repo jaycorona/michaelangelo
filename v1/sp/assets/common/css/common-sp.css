@@ -1,0 +1,105 @@
+@charset "utf-8";
+/*********************************************
+
+ * Theme Name : smartphone common Theme
+ * Author : mitsut
+ * Version : 2.0
+ * Last-updated : 13-12-03
+ 
+ Copyright © 2012 ULM design Co.,Ltd.
+
+
+ * font-size（px : %）
+ * base font-size:14px;
+ * 
+ *  10 px : 71%   |  11 px : 78% 
+ *  12 px : 85%   |  13 px : 92% 
+ *  14 px : 100%  |  15 px : 114% 
+ *  16 px : 117%  |  17 px : 121%
+ *  18 px : 128%  |  19 px : 132%
+ *  20 px : 145%  |  22 px : 157%
+ *  24 px : 171%  |  26 px : 185%
+ *  28 px : 200%  |  30 px : 214%
+ *  32 px : 228%  |  34 px : 243%
+ *  36 px : 257%
+
+**********************************************/
+
+body{
+	font-size: 15px;
+	font-family: Helvetica,HiraKakuProN-W3;
+	line-height:1.6;
+	-webkit-text-size-adjust: none; /* auto adjust */
+}
+
+
+/*-----------------------
+
+font
+
+------------------------*/
+.fontsize-10{ font-size:71%;}
+.fontsize-11{ font-size:78%;}
+.fontsize-12{ font-size:85%;}
+.fontsize-13{ font-size:92%;}
+.fontsize-14{ font-size:100%;}
+.fontsize-15{ font-size:114%;}
+.fontsize-20{ font-size:145%;}
+
+
+
+/*-----------------------
+
+display
+
+------------------------*/
+article,aside,canvas,details,
+figcaption,figure,footer,header,
+hgroup,menu,nav,section,summary{
+	display:block;
+}
+
+
+img{
+	border:0;
+	vertical-align:bottom;
+}
+
+table{
+	border-spacing:0;
+	empty-cells:show;
+}
+
+
+
+h2{
+	/*font-28*/
+	font-size:200%;
+	line-height:150%;
+}
+
+h3{
+	/*font-24*/
+	font-size:171%;
+}
+
+h4{
+	/*font-14*/
+	font-size:100%;
+}
+
+
+.small {
+	/*font-12*/
+	font-size:85%;
+}
+
+.display-none{
+	display:none;
+}
+
+.strong{
+	font-weight:bold;
+	display:block;
+}
+
