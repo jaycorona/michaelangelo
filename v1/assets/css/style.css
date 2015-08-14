@@ -1,4 +1,26 @@
 @charset "utf-8";
+
+
+
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+
+body {
+	background: #000;
+	color: #fff;
+	font-family: Arial;
+	background-image: url("../img/top/bg.jpg");
+	background-size: auto 620px;
+	background-repeat: repeat-x;
+}
+
+
+
 /*--****************************************
 
 
@@ -14,11 +36,7 @@
 
 #main{
 	position:relative;
-}
-
-#main-container{
-	position:absolute;
-	z-index:3;
+	height: auto !important;
 }
 
 #ttl{
@@ -53,21 +71,50 @@
 	margin-top:-44px;
 }
 
+#header {
+	height: 32px;
+	background: #111;
+}
 
+#header .header-inner {
+	min-width: 1024px;
+	width: 1024px;
+	margin: 0 auto;
+	height: 100%;
+}
 
+#header .header-left{
+	display: inline-block;
+	float:left;
+	height: 100%;
+	width: auto;
+	padding-top: 8px; /*before 4px;*/
+	box-sizing: border-box;
+}
+
+#header .header-right{
+	display: inline-block;
+	float:right;
+	height: 100%;
+	width: auto;
+	padding-top: 4px;
+	box-sizing: border-box;
+}
+
+#header .header-right .social-container {
+	padding: 0;
+}
 
 #footer{
 	background:#000;
 	background:rgba(0,0,0,0.9);
 	width:100%;
-	position:absolute;
-	z-index:2;
-	bottom:0px;
-	left:0px;
+	margin-top: -70px;
 }
 
 #footer-inner{
 	width:1024px;
+	min-width: 1024px;
 	margin:0 auto;
 	text-align:center;
 }
@@ -76,16 +123,93 @@
 	padding:15px 0 20px 0;
 }
 
-
-#bg-container{
-	position:absolute;
-	z-index:0;
-	top:0px;
-	left:0px;
-	overflow:hidden;
-}
-#bg{
-	position:absolute;
-	z-index:0;
+#billing > img {
+	width: 100%;
 }
 
+
+
+#main-container {
+	min-width: 1024px;
+	max-width: 1600px;
+	margin: 0 auto;
+	width: 1024px;
+	height: auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#main-container .main-visual {
+	width: 100%;
+	height: auto;
+}
+
+
+.sub-title {
+	position: relative;
+	top: -70px;
+	width: 700px;
+}
+
+.main-title-con {
+	display: block;
+	position: absolute;
+	text-align: center;
+	margin-top: -365px;
+	min-width: 1024px;
+}
+
+.main-title {
+	width: 835px;
+	margin-left: 30px;
+}
+
+
+#colorbox {
+	z-index: 1000;
+	background: #000;
+}
+
+#cboxLoadedContent iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.social-button {
+	display: inline-block;
+	height: 24px;
+	width: 165px;
+	
+}
+.twitter-button {
+	background: transparent url("../img/top/twitter.png") center center no-repeat;
+	background-size: auto 15px;
+	background-position: 0px 0px;
+}
+
+.twitter-button:active {
+	background-position: 0px -24px;
+}
+
+.facebook-button {
+	background: transparent url("../img/top/fb.png") center center no-repeat;
+	background-size: auto 15px;
+	background-position: 0px 0px;
+}
+
+.facebook-button:active {
+	background-position: 0px -24px;
+}
+
+.trailer-button {
+	background: transparent url("../img/top/trailer.png") center center no-repeat;
+	background-size: auto 15px;
+	background-position: 0px 0px;
+	display: inline-block;
+    height: 24px;
+    width: 97px;
+}
+
+.trailer-button:active {
+	background-position: 0px -24px;
+}

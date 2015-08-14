@@ -32,6 +32,7 @@
 <script type="text/javascript" src="assets/common/js/jquery.cookie.js"></script>
 <script type="text/javascript" src="assets/common/js/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="assets/common/js/jquery.imagesloaded.js"></script>
+<script type="text/javascript" src="assets/js/jquery.colorbox-min.js"></script>
 <script type="text/javascript" src="assets/common/js/utils.js"></script>
 <script type="text/javascript">
 	var ua =getUA();
@@ -68,53 +69,56 @@
     <!--
     @main
     -->
+    
+    <div id="header">
+		<div class="header-inner">
+			<div class="header-left">
+				<a href="#" class="trailer-button"></a>
+				<a href="#" class="social-button twitter-button"></a>
+				<a href="#" class="social-button facebook-button"></a>
+			</div>
+			<div class="header-right">
+				            <!--
+	            @sns
+	            -->
+				<ul class="social-container clearfix">
+	            
+	                <li id="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://miche-project.com/" data-text="史上最高額のトレジャー・ハンティング!!『ミケランジェロ・プロジェクト』11.6 Fri. ROADSHOW" data-via="presidio00" data-lang="ja" data-related="presidio00">ツイート</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+	                
+	                <li id="facebook-like"><div class="fb-like" data-layout="button_count" data-href="http://miche-project.com/"></div></li>
+	                
+	                <li id="eiga-com"><script type="text/javascript"src="http://eigacheck.in/movie/79208.js"></script></li>
+	                            
+	            </ul><!--social-container-->
+			</div>
+		</div>
+	</div>
+    
     <div id="main">
     	
         <div id="main-container">
-        
-            <h1 id="ttl"><img src="assets/img/top/main.png" alt="映画『ミケランジェロ・プロジェクト』 ジョージ・クルーニー マット・デイモン ビル・マーレイ and ケイト・ブランシェット 11.6[FRI]" /></h1>
-            
-            <ul id="top-navi" class="clearfix">
-                <li><a href="https://twitter.com/presidio00" target="_blank"><img src="assets/img/top/b0.png" alt="OFFICIAL TWITTER" /></a></li>
-                <li><a href="https://www.facebook.com/presidio.co" target="_blank"><img src="assets/img/top/b1.png" alt="OFFICIAL FACEBOOK" /></a></li>
-            </ul>
-            
+        		<img src="assets/img/top/cast.png" class="main-visual">
+				<img src="assets/img/top/desc.png" class="sub-title">
+				<div class="main-title-con">
+					<img src="assets/img/top/main.png" class="main-title">
+				</div>
         </div>
-        
     </div><!--/main-->
-    
+
     <!--
     @footer
     -->
     <div id="footer">
-    
     	<div id="footer-inner">
-        
-            <!--
-            @sns
-            -->
-		<!-- 	<ul class="social-container clearfix">
-            
-                <li id="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://miche-project.com/" data-text="史上最高額のトレジャー・ハンティング!!『ミケランジェロ・プロジェクト』11.6 Fri. ROADSHOW" data-via="presidio00" data-lang="ja" data-related="presidio00">ツイート</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
-                
-                <li id="facebook-like"><div class="fb-like" data-layout="button_count" data-href="http://miche-project.com/"></div></li>
-                
-                <li id="eiga-com"><script type="text/javascript"src="http://eigacheck.in/movie/79208.js"></script></li>
-                            
-      </ul> --><!--social-container-->
-            
-          <p id="billing"><img src="assets/img/top/.png" alt="監督：ジョージ・クルーニー　脚本・製作：ジョージ・クルーニー｜グラント・ヘスロヴ 原作：「ミケランジェロ・プロジェクト」著：ロバート・M・エドゼル（角川文庫） 出演：ジョージ・クルーニー｜マット・デイモン｜ビル・マーレイ｜ジョン・グッドマン｜ジャン・デュジャルダン｜ボブ・バラバン｜ヒュー・ボネヴィル｜ケイト・ブランシェット 2014年|アメリカ|カラー|5.1ch|DCP|シネスコ|118分|字幕翻訳：松浦美奈|原題：The Monuments Men 提供：プレシディオ　ビー・ブレーブ　三共プランニング　配給：プレシディオ &copy;2014 Twentieth Century Fox Film Corporation. All Rights Reserved." /></p>
-
+            <p id="billing">
+            	<img src="assets/img/top/billing.png" alt="監督：ジョージ・クルーニー　脚本・製作：ジョージ・クルーニー｜グラント・ヘスロヴ 原作：「ミケランジェロ・プロジェクト」著：ロバート・M・エドゼル（角川文庫） 出演：ジョージ・クルーニー｜マット・デイモン｜ビル・マーレイ｜ジョン・グッドマン｜ジャン・デュジャルダン｜ボブ・バラバン｜ヒュー・ボネヴィル｜ケイト・ブランシェット 2014年|アメリカ|カラー|5.1ch|DCP|シネスコ|118分|字幕翻訳：松浦美奈|原題：The Monuments Men 提供：プレシディオ　ビー・ブレーブ　三共プランニング　配給：プレシディオ &copy;2014 Twentieth Century Fox Film Corporation. All Rights Reserved." />
+            </p>
         </div>
-    
     </div><!--/footer-->
     
 </div><!--/wrapper-->
 
-<div id="bg-container">
-	<img id="bg" src="assets/img/top/bg.jpg" alt="背景" />
-</div>
 
 
 

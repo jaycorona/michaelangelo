@@ -69,7 +69,7 @@ var Main =(function(){
 	
 	var MOVIE_W = 853;
 	var MOVIE_H = 480;
-	var YOUTUBE_URL ="movie/index.html";
+	var YOUTUBE_URL ="http://www.youtube.com/embed/poVQOnNzrRc?autoplay=true";
 	
 	var _stats;
 	
@@ -131,14 +131,14 @@ var Main =(function(){
 					$(this).load(function(){
 						_imgLoadedNum++;
 						txt.text(String( Math.floor((_imgLoadedNum/_allImgNum)*100)+"%" ));
-					})
+					});
 				}else{
 					$(this).imagesLoaded(function(){
 						_imgLoadedNum++;
 						txt.text(String( Math.floor((_imgLoadedNum/_allImgNum)*100)+"%" ));
-					})
+					});
 				}
-			})
+			});
 			
 		};
 		
@@ -159,6 +159,9 @@ var Main =(function(){
 				$('#wrapper').css({"display":"block"});
 				setConfig();
 			};
+			
+			
+			onInitIndex();
 		});
 		
 	};
@@ -214,7 +217,6 @@ var Main =(function(){
 	
 	********************************************************/
 	function onInitIndex(){
-		
 		
 		if(_isVisited == false){
 			if(!IS_TEST){
@@ -404,7 +406,7 @@ var Main =(function(){
 		__resize:__resize,
 		showMovie:showMovie,
 		onCompleteMovie:onCompleteMovie
-	}
+	};
 	
 })();
 
